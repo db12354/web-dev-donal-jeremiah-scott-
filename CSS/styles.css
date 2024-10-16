@@ -1,0 +1,193 @@
+/*colour pallette 
+#fffaff  -white
+#3E92CC -light blue 
+#0A2463 -dark blue
+*/
+
+#title{
+  font-size: xx-large;
+  background-color: #0A2463;
+  color: aliceblue;
+}
+body {
+  font-family: "Audiowide", sans-serif;
+  background-color: #3E92CC;
+}
+#button_tts{
+  float:right;
+}
+
+#banner{
+  height:600px;
+  width: 1900px;
+}
+
+
+#client{
+  color: aliceblue;
+  font-size: xx-large;
+  background-color: #0A2463;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.sec-intro{
+  font-size: larger;
+  background-color: #0A2463;
+  color: aliceblue;
+}
+
+.client_titles{
+
+  color: aliceblue;
+  font-size: xx-large;
+  background-color: #0A2463;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#jenna_txt{
+  font-size: larger;
+  background-color: #0A2463;
+  color: aliceblue;
+  /*text-align: center;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  
+}
+#jenna_img{/*jenna  image*/
+  height:300px;
+  width: 450px;
+}
+#sean{
+  font-size: large;
+  float:left;
+
+}
+#sean_txt{
+  text-align: center;
+}
+#sean_img{/*sean image*/
+  float: right;
+  height:400px;
+  width: 450px;
+}
+.container {
+  display: flex;
+  align-items: auto;
+  justify-content: auto;
+}
+
+
+#nathan{
+
+  font-size: larger;
+  background-color: #0A2463;
+  color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+#nathan_img{
+  height:400px;
+  width: 450px;
+}
+
+#sean{
+  font-size: large;
+  background-color: #0A2463;
+  color: aliceblue;
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height:350px;
+  width: 1000px;
+
+  
+}
+
+/*
+.text{
+  font-size: larger;
+  background-color: #0A2463;
+  color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height:400px;
+  width: 900px;
+
+  
+}
+
+
+/*link*/
+a:link{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+
+
+/*contact*/
+#contact{
+  float:right ;
+  margin-left: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: xx-large;
+  color: aliceblue;
+}
+#about{
+  float: right;
+  margin-left: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: xx-large;
+  color: aliceblue;
+}
+
+/*home*/
+#index{
+  float: right;
+  border: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: xx-large;
+  color: aliceblue;
+}
+
+
+/* */
+footer{
+  background-color: #0A2463;
+  color: aliceblue;
+  text-align: center;
+}
+#copywright{
+  text-align: center;
+}
