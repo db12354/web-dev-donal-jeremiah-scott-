@@ -16,38 +16,95 @@ body {
 #button_tts{
   float:right;
 }
+
 #banner{
   height:600px;
   width: 1900px;
 }
-/*
-#bg{
-  max-height: 500px;
-  min-height: 200px;
-  position: relative;
-  z-index: 1;
-  background-color: transparent;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
+
+
 #client{
-  text-align: center;
   color: aliceblue;
-  font-size: x-large;
+  font-size: xx-large;
   background-color: #0A2463;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
 }
+
 .sec-intro{
-  /*text-align: center;*/
   font-size: larger;
   background-color: #0A2463;
   color: aliceblue;
 }
-#text{
-  float:left;
+
+.client_titles{
+
+  color: aliceblue;
+  font-size: xx-large;
+  background-color: #0A2463;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#jenna_txt{
   font-size: larger;
+  background-color: #0A2463;
+  color: aliceblue;
+  /*text-align: center;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  
+}
+#jenna_img{/*jenna  image*/
+  height:300px;
+  width: 450px;
+}
+#sean{
+  font-size: large;
+  float:left;
+
+}
+#sean_txt{
+  text-align: center;
+}
+#sean_img{/*sean image*/
+  float: right;
+  height:400px;
+  width: 450px;
+}
+.container {
+  display: flex;
+  align-items: auto;
+  justify-content: auto;
+}
+
+
+#nathan{
+
+  font-size: larger;
+  background-color: #0A2463;
+  color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+#nathan_img{
+  height:400px;
+  width: 450px;
+}
+
+#sean{
+  font-size: large;
   background-color: #0A2463;
   color: aliceblue;
   
@@ -55,15 +112,26 @@ body {
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  height:350px;
+  width: 1000px;
+
   
 }
-#client1{
-  float: right;
-  height:600px;
-  width: 600px;
+
+/*
+.text{
+  font-size: larger;
+  background-color: #0A2463;
+  color: aliceblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height:400px;
+  width: 900px;
+
+  
 }
-
-
 
 
 /*link*/
