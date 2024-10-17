@@ -73,10 +73,10 @@ body {
 
 }
 #sean_txt{
+  float: left;
   text-align: center;
 }
 #sean_img{/*sean image*/
-  float: right;
   height:400px;
   width: 450px;
 }
