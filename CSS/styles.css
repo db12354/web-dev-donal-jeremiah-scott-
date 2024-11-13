@@ -3,40 +3,42 @@
 #3E92CC -light blue 
 #0A2463 -dark blue
 */
+:root{
+  --primary:#0A2463;
+  --secondary:#3E92CC;
+  --text:#ffffff;
+  --text_background:#233f80;
+}
 
-#title{
+.title{
   font-size: xx-large;
-  background-color: #0A2463;
+  background-color: var(--primary);
+  color: var(--text);
   color: aliceblue;
 }
 body {
   font-family: "Audiowide", sans-serif;
-  background-color: #3E92CC;
+  background-color: var(--secondary);
+
+}
+body p{
+  border: 10px solid lightblue;
+
 }
 #button_tts{
   float:right;
 }
 
 #banner{
-  height:600px;
-  width: 1900px;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 
-
-#client{
-  color: aliceblue;
-  font-size: xx-large;
-  background-color: #0A2463;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-}
 
 .sec-intro{
   font-size: larger;
-  background-color: #0A2463;
+  background-color: var(--primary);
   color: aliceblue;
 }
 
@@ -44,42 +46,13 @@ body {
 
   color: aliceblue;
   font-size: xx-large;
-  background-color: #0A2463;
+  background-color: var(--primary);
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
-#jenna_txt{
-  font-size: larger;
-  background-color: #0A2463;
-  color: aliceblue;
-  /*text-align: center;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  
-  
-}
-#jenna_img{/*jenna  image*/
-  height:300px;
-  width: 450px;
-}
-#sean{
-  font-size: large;
-  float:left;
-
-}
-#sean_txt{
-  float: left;
-  text-align: center;
-}
-#sean_img{/*sean image*/
-  height:400px;
-  width: 450px;
-}
 .container {
   display: flex;
   align-items: auto;
@@ -87,54 +60,13 @@ body {
 }
 
 
-#nathan{
-
-  font-size: larger;
-  background-color: #0A2463;
-  color: aliceblue;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  
-}
-#nathan_img{
-  height:400px;
-  width: 450px;
-}
-
-#sean{
-  font-size: large;
-  background-color: #0A2463;
-  color: aliceblue;
-  
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  height:350px;
-  width: 1000px;
-
-  
-}
-
-/*
 .text{
   font-size: larger;
-  background-color: #0A2463;
-  color: aliceblue;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  height:400px;
-  width: 900px;
+  background-color: var(--text_background);
+  color: var(--text)  ;
 
-  
 }
-
-
-/*link*/
+  /*link*/
 a:link{
   color: aliceblue;
   text-decoration: none;
@@ -148,27 +80,7 @@ a:hover {
   color: hotpink;
   text-decoration: none;
 }
-
-
-
-/*contact*/
-#contact{
-  float:right ;
-  margin-left: 20px;
-  list-style: none;
-  box-sizing: border-box;
-  font-size: xx-large;
-  color: aliceblue;
-}
-#about{
-  float: right;
-  margin-left: 20px;
-  list-style: none;
-  box-sizing: border-box;
-  font-size: xx-large;
-  color: aliceblue;
-}
-
+/* navbar*/
 /*home*/
 #index{
   float: right;
@@ -180,14 +92,132 @@ a:hover {
   font-size: xx-large;
   color: aliceblue;
 }
+/*contact*/
+
+#contact{
+  float:right ;
+  margin-left: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: xx-large;
+  color: aliceblue;
+}
+/*home*/
+#about{
+  float: right;
+  margin-left: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: xx-large;
+  color: aliceblue;
+}
+/*booking*/
+#booking{
+  float: right;
+  margin-left: 20px;
+  list-style: none;
+  font-size: xx-large;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
 
 
 /* */
 footer{
-  background-color: #0A2463;
+  background-color: var(--primary);
   color: aliceblue;
   text-align: center;
 }
 #copywright{
   text-align: center;
+  background-color: var(--primary);
+}
+/*
+.img{
+  height: 40%;
+  width: 60%;
+}
+*/
+#jenna_img{
+  height: 40%;
+  width: 60%;
+  
+}
+
+#sean_img{
+  height: 40%;
+  width: 60%;
+}
+
+#nathan_img{
+  height: 40%;
+  width: 60%;
+} 
+/*
+img{
+  height: 40%;
+  width: 60%;
+}
+
+
+
+/* Booking page*/
+
+
+
+
+
+  /*scrollong image nav */ 
+  div.scroll-container {
+    background-color: var(--primary);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+/*dropdown*/
+.dropbtn {
+  background-color: var(--primary);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content option {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content option:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #54bbc5;}
+
+#form{
+  background-color: var(--text_background);
+  text-align: center;
+  color: var(--text);
 }
