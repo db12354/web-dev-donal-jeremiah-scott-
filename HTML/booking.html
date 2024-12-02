@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
   <link rel="stylesheet" href="../CSS/styles.css">
+  <script src="../JAVASCRIPT/main.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta charset="UTF-8">
   <title>booking</title>
@@ -36,33 +37,46 @@
 <div id = "form">
   
 
-  <form action="/action_page.php">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value=""><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value=""><br><br>
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email" value=""><br>
+  <form action="booking.html" onsubmit="return validateForm()" alt="form">
+    
+    <label for="first">First name:</label><br>
+    <input type="text" id="first" name="first" value="" required aria-label="first name"><br>
+    
+    <label for="second">Last name:</label><br>
+    <input type="text" id="second" name="second" value="" required aria-label="last name"><br><br>
+  
+    <label for="email">Email address:</label><br>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required aria-label="email address input""><br>
+
     <label for="phone">Phone Number:</label><br>
-    <input type="text" id="phone" name="phone" value=""><br><br>
+    <input type="text" id="phone" name="phone" value="" required aria-label="phone number"><br><br>
 
     <div class="dropdown">
+
       <p>what resort do you want to book</p>
       <button class="dropbtn">Resort</button>
+
       <div class="dropdown-content">
+
         <option value="france">france</option>
         <option value="germany">germany</option>
         <option value="austria">austria</option>
         <option value="switzerland">switzerland</option>
+
       </div>
     </div>
+
+
     <p>Tell us about your experience booking with us.</p>
     <textarea name="message" rows="10" cols="60">
       Your text here!
       </textarea> 
       <br>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" aria-label="submit button">
   </form> 
+  <div id = submit>
+    <p> make sure to fill out all parts of the form</p>
+  </div>
   
   
 </div>
